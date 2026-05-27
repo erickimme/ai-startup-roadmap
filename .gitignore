@@ -8,3 +8,5 @@ node_modules/
 roadmap/*.md
 roadmap/*.docx
 !roadmap/.gitkeep
+# 단계별 DOCX 빌드 폴더(어디에 있든)
+docx/

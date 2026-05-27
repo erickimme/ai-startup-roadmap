@@ -89,6 +89,6 @@ Codex/Claude Code/Cursor처럼 파일을 쓸 수 있는 환경에서는, 각 단
 | 8 피어 리뷰 | `roadmap/08_피어리뷰.md` |
 | 9 최종본 + 최종 피치 | 전체 갱신 + `roadmap/09_최종피칭.md` + `roadmap/README.md`(목차) |
 
-9단계 종료 후 `roadmap/`의 모든 문서를 하나의 **DOCX로 내보낸다**: `bash scripts/export-docx.sh` 실행을 제안·승인받아 실행(→ `roadmap/나의_창업로드맵.docx`).
+각 단계를 끝낼 때 **DOCX로 내보내** 참가자가 Word에서 수정하게 한다: `bash scripts/export-docx.sh` → `roadmap/docx/NN_*.docx`(단계별) + 통합본. 참가자가 Word에서 고치면 그 내용을 말로 받아 md를 갱신하거나 `bash scripts/sync-docx.sh`로 재반영한 뒤 다음 단계로 진행한다. (md는 작업 원본, docx는 사람이 보고 고치는 사본)
 
 > Day 1 마무리의 60초 미니 피치는 **연습 활동**이며 별도 산출물 파일을 만들지 않는다. 그 피치는 9단계 `09_최종피칭.md`에서 30/60/3분으로 발전시킨다.

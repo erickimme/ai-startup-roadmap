@@ -35,7 +35,13 @@
 
 각 산출물은 `templates/participant-workbook.md`의 항목 구조를 기준으로 채운다.
 
-9단계까지 끝나면(또는 참가자가 "문서로 내보내줘"라고 하면) `roadmap/`의 모든 마크다운을 **하나의 DOCX로 내보낸다**: 터미널에서 `bash scripts/export-docx.sh` 실행을 제안하고 승인받아 실행한다(결과: `roadmap/나의_창업로드맵.docx`). pandoc이 없으면 스크립트가 설치 방법을 안내한다.
+### DOCX 내보내기와 Word 수정 (참가자는 md보다 Word가 익숙)
+
+각 단계 산출물이 쌓이면, 참가자가 **Word에서 직접 고칠 수 있도록 DOCX로 내보낸다**.
+
+- 한 단계를 끝낼 때(또는 참가자가 "문서로 내보내줘"라고 하면) `bash scripts/export-docx.sh` 실행을 제안·승인받아 실행한다 → `roadmap/docx/NN_*.docx`(단계별) + `roadmap/나의_창업로드맵.docx`(통합) 생성.
+- 참가자가 docx를 Word에서 수정한 뒤 **"수정했어/반영해줘"**라고 하면: 바꾼 핵심을 말로 받아 md를 갱신하거나, `bash scripts/sync-docx.sh`로 docx→md 재반영 후 다음 단계로 이어간다.
+- pandoc이 없으면 스크립트가 설치 방법을 안내한다.
 
 ## 언어
 

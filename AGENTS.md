@@ -25,12 +25,13 @@
 - `roadmap/02_BMC.md`
 - `roadmap/03_GTM.md`
 - `roadmap/04_세일즈플랜.md`
-- `roadmap/05_미니피칭.md`  *(Day 1 마무리)*
-- `roadmap/06_개발로드맵.md`
-- `roadmap/07_HR플랜.md`
-- `roadmap/08_실행타임라인.md`
-- `roadmap/09_피어리뷰.md`
-- `roadmap/10_최종피칭.md` + 전체 2차 갱신 + `roadmap/README.md`(목차)
+- `roadmap/05_개발로드맵.md`
+- `roadmap/06_HR플랜.md`
+- `roadmap/07_실행타임라인.md`
+- `roadmap/08_피어리뷰.md`
+- `roadmap/09_최종피칭.md` — 최종 수정본 1페이지 요약 + 30/60/3분 피치 + 전체 2차 갱신, 그리고 `roadmap/README.md`(목차)
+
+> Day 1 마무리의 60초 미니 피치는 **연습 활동**이며 별도 산출물 파일을 만들지 않는다. 그 내용은 `09_최종피칭.md`에서 발전시킨다.
 
 각 산출물은 `templates/participant-workbook.md`의 항목 구조를 기준으로 채운다.
 

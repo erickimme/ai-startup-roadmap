@@ -74,9 +74,10 @@ Codex/Claude Code/Cursor처럼 파일을 쓸 수 있는 환경에서는, 각 단
 | 2 BMC | `roadmap/02_BMC.md` |
 | 3 GTM | `roadmap/03_GTM.md` |
 | 4 세일즈 플랜 | `roadmap/04_세일즈플랜.md` |
-| (Day1 마무리) 미니 피치 | `roadmap/05_미니피칭.md` |
-| 5 개발 로드맵 | `roadmap/06_개발로드맵.md` |
-| 6 HR 플랜 | `roadmap/07_HR플랜.md` |
-| 7 실행 타임라인 | `roadmap/08_실행타임라인.md` |
-| 8 피어 리뷰 | `roadmap/09_피어리뷰.md` |
-| 9 최종본 + 최종 피치 | 전체 갱신 + `roadmap/10_최종피칭.md` + `roadmap/README.md`(목차) |
+| 5 개발 로드맵 | `roadmap/05_개발로드맵.md` |
+| 6 HR 플랜 | `roadmap/06_HR플랜.md` |
+| 7 실행 타임라인 | `roadmap/07_실행타임라인.md` |
+| 8 피어 리뷰 | `roadmap/08_피어리뷰.md` |
+| 9 최종본 + 최종 피치 | 전체 갱신 + `roadmap/09_최종피칭.md` + `roadmap/README.md`(목차) |
+
+> Day 1 마무리의 60초 미니 피치는 **연습 활동**이며 별도 산출물 파일을 만들지 않는다. 그 피치는 9단계 `09_최종피칭.md`에서 30/60/3분으로 발전시킨다.

@@ -113,6 +113,7 @@ bash scripts/export-docx.sh        # → roadmap/docx/01_….docx … (단계별
 4. 마지막에 다시 내보내면 **통합 DOCX**가 최신본으로 갱신됩니다.
 
 - 표까지 깔끔히 변환하려면 **pandoc** 필요: macOS `brew install pandoc` / Windows `choco install pandoc` / Linux `sudo apt install pandoc`. (자세히는 `docs/troubleshooting.md`)
+- **가독성 서식**(맑은 고딕 · 브랜드 색 제목 · 표 테두리)은 `assets/reference.docx` 템플릿으로 자동 적용됩니다. 톤을 바꾸려면 이 파일을 Word에서 열어 스타일(제목/본문/표)만 수정해 저장하면 됩니다.
 - 실제 출력 예시: `examples/sample-run-건강정보플랫폼/나의_창업로드맵.docx` (+ `bash scripts/export-docx.sh examples/sample-run-건강정보플랫폼`로 단계별 재생성)
 
 ---

@@ -10,3 +10,6 @@ roadmap/*.docx
 !roadmap/.gitkeep
 # 단계별 DOCX 빌드 폴더(어디에 있든)
 docx/
+
+# 참가자 reference 원본(비공개)
+examples/**/eric-startup-roadmap-v0-detailed*.docx

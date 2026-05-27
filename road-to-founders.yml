@@ -1,0 +1,18 @@
+name: road-to-founders
+language: ko
+outputs:
+  - idea-definition
+  - business-model-canvas
+  - gtm-strategy
+  - sales-plan
+  - development-roadmap
+  - hr-plan
+  - execution-timeline
+  - peer-review
+  - final-revision-and-pitch
+participant_default_agent: ChatGPT Plus
+agent_support:
+  chatgpt: copy prompts and skill text manually
+  claude_code: read AGENTS.md and skills/manifest.json
+  cursor: read AGENTS.md and use skills as markdown rules
+  openclaw_gbrain: install skills directory as skillpack

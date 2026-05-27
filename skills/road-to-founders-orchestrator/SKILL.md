@@ -1,0 +1,65 @@
+---
+name: road-to-founders-orchestrator
+version: 1.0.0
+description: 2일 창업 로드맵 캠프 전체를 단계별로 진행하고 필요한 스킬을 라우팅한다.
+triggers:
+  - road to founders
+  - 창업 로드맵 전체 진행
+  - 캠프 진행
+  - 9개 산출물 만들기
+mutating: false
+---
+
+# Road to Founders Orchestrator
+
+## 목적
+
+참가자의 1문장 아이디어를 9개 산출물로 순서대로 확장한다.
+
+## 진행 순서
+
+1. `idea-refiner`: 아이디어 정의서
+2. `business-model-canvas`: BMC와 핵심 가정
+3. `gtm-strategy`: 초기 고객과 채널
+4. `sales-plan`: 가격, 퍼널, 매출
+5. `startup-cto-roadmap`: MVP와 개발 계획
+6. `people-ops-plan`: 팀과 채용
+7. `coo-timeline`: 실행 타임라인과 OKR
+8. `vc-red-team-review`: 피어 리뷰와 약한 가정 공격
+9. `final-editor` + `pitch-coach`: 최종본과 피치
+
+고객 반응이 필요한 순간에는 `korean-synthetic-consumer`를 보조로 사용한다. 시장 규모, 경쟁사, 가격, 인건비 근거가 필요한 순간에는 `evidence-research`를 사용한다.
+
+## 입력
+
+- 참가자 이름
+- 전공/배경
+- 초기 1문장 아이디어
+- 목표 고객
+- 만들고 싶은 결과물 수준
+- 사용 가능한 AI 도구
+
+## 출력
+
+- 현재 단계
+- 다음에 사용할 스킬
+- 참가자에게 물어볼 질문 최대 5개
+- 이번 단계 산출물
+- 다음 단계로 넘어가기 전 체크리스트
+
+## 운영 규칙
+
+- 한 번에 9개를 만들지 않는다.
+- 단계마다 가장 약한 가정을 하나 이상 표시한다.
+- 모르는 숫자는 `[가정]`으로 표기한다.
+- 참가자가 막히면 선택지를 3개 제시한다.
+- 2일 캠프에서는 완벽함보다 흐름 완주를 우선한다.
+
+## 체크리스트
+
+각 단계 종료 시 아래를 확인한다.
+
+- 타겟 고객이 좁혀졌는가
+- 숫자 또는 가정이 명시됐는가
+- 다음 검증 행동이 있는가
+- 피치에 들어갈 문장이 하나 생겼는가

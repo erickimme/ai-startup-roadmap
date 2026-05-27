@@ -1,0 +1,23 @@
+{
+  "name": "road-to-founders",
+  "version": "1.0.0",
+  "language": "ko",
+  "description": "AI 창업 로드맵 캠프용 에이전트 스킬팩",
+  "compatible_agents": ["ChatGPT", "Claude", "Claude Code", "Cursor", "OpenClaw", "GBrain", "Codex"],
+  "skills": [
+    {"name": "road-to-founders-orchestrator", "path": "road-to-founders-orchestrator/SKILL.md", "description": "2일 캠프 전체 진행과 스킬 라우팅"},
+    {"name": "idea-refiner", "path": "idea-refiner/SKILL.md", "description": "1문장 아이디어를 타겟, 문제, 가치제안으로 정제"},
+    {"name": "business-model-canvas", "path": "business-model-canvas/SKILL.md", "description": "9블록 BMC, TAM/SAM/SOM, unit economics"},
+    {"name": "gtm-strategy", "path": "gtm-strategy/SKILL.md", "description": "초기 타겟, 채널, 런칭 플랜, 메시징"},
+    {"name": "sales-plan", "path": "sales-plan/SKILL.md", "description": "수익모델, 가격 전략, 퍼널, 매출 목표"},
+    {"name": "korean-synthetic-consumer", "path": "korean-synthetic-consumer/SKILL.md", "description": "한국형 합성 소비자 패널 기반 메시지와 제품 반응 점검"},
+    {"name": "evidence-research", "path": "evidence-research/SKILL.md", "description": "시장, 경쟁, 가격, 채용비 근거 리서치"},
+    {"name": "startup-cto-roadmap", "path": "startup-cto-roadmap/SKILL.md", "description": "MVP 범위, 기술 스택, 개발 마일스톤"},
+    {"name": "people-ops-plan", "path": "people-ops-plan/SKILL.md", "description": "초기 팀 구성, 채용 순서, 보상, 운영 역할"},
+    {"name": "coo-timeline", "path": "coo-timeline/SKILL.md", "description": "3개월, 6개월, 12개월 실행 타임라인과 OKR"},
+    {"name": "vc-red-team-review", "path": "vc-red-team-review/SKILL.md", "description": "투자자 관점의 약한 가정 공격과 피어 리뷰"},
+    {"name": "pitch-coach", "path": "pitch-coach/SKILL.md", "description": "30초, 60초, 3분 피치와 Q&A 준비"},
+    {"name": "final-editor", "path": "final-editor/SKILL.md", "description": "9개 산출물의 최종 수정본 정리"},
+    {"name": "skill-creator-lite", "path": "skill-creator-lite/SKILL.md", "description": "캠프 중 빈 기능을 새 스킬로 만드는 경량 메타 스킬"}
+  ]
+}

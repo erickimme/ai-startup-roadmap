@@ -63,3 +63,20 @@ mutating: false
 - 숫자 또는 가정이 명시됐는가
 - 다음 검증 행동이 있는가
 - 피치에 들어갈 문장이 하나 생겼는가
+
+## 산출물 파일 저장 (파일 기반 에이전트)
+
+Codex/Claude Code/Cursor처럼 파일을 쓸 수 있는 환경에서는, 각 단계 산출물을 아래 이름으로 `roadmap/` 폴더에 한국어 마크다운으로 저장하고 누적한다. (파일을 못 쓰는 ChatGPT 웹에서는 출력만 하고 참가자가 워크북에 붙여넣는다.)
+
+| 단계 | 파일 |
+|---|---|
+| 1 아이디어 정의서 | `roadmap/01_아이디어정의서.md` |
+| 2 BMC | `roadmap/02_BMC.md` |
+| 3 GTM | `roadmap/03_GTM.md` |
+| 4 세일즈 플랜 | `roadmap/04_세일즈플랜.md` |
+| (Day1 마무리) 미니 피치 | `roadmap/05_미니피칭.md` |
+| 5 개발 로드맵 | `roadmap/06_개발로드맵.md` |
+| 6 HR 플랜 | `roadmap/07_HR플랜.md` |
+| 7 실행 타임라인 | `roadmap/08_실행타임라인.md` |
+| 8 피어 리뷰 | `roadmap/09_피어리뷰.md` |
+| 9 최종본 + 최종 피치 | 전체 갱신 + `roadmap/10_최종피칭.md` + `roadmap/README.md`(목차) |

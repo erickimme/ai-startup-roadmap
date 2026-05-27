@@ -1,5 +1,7 @@
 # PathPivot 샘플 사용법
 
+> 📎 실제 샘플 문서: [`examples/pathpivot.md`](examples/pathpivot.md) — 9종 산출물을 한 파일에 압축한 천장 샘플.
+
 PathPivot은 참가자 평균 산출물이 아니라 ceiling sample입니다.
 
 강사는 PathPivot을 이렇게 사용합니다.

@@ -45,7 +45,8 @@ https://github.com/erickimme/ai-startup-roadmap 저장소를 clone해서 읽고,
 먼저 환영 인사와 함께 Stage 1을 시작해줘.
 ```
 
-> 💡 Codex가 저장소를 가져오려고 `git clone` 실행 승인을 물으면 **승인(y)** 하세요. 이후부터는 코치가 1단계부터 순서대로 안내하고, 결과물이 `roadmap/` 폴더에 쌓입니다.
+> 💡 Codex가 저장소를 가져오거나(`git clone`) `roadmap/` 폴더에 파일을 만들 때 **승인(y)** 을 물어봅니다 — 정상이니 승인하세요. 이후 코치가 1단계부터 순서대로 안내하고, 결과물이 `roadmap/` 폴더에 쌓입니다.
+> 🛠 설치·로그인이 막히면 [`docs/troubleshooting.md`](docs/troubleshooting.md)를 보세요.
 
 짧게 쓰고 싶으면 이렇게만 보내도 됩니다:
 

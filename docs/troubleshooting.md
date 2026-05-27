@@ -41,3 +41,9 @@ codex --version   # 버전이 나오면 설치 OK
 
 ## 9. 완전히 막히면
 - 손을 들어 강사·조교를 부르세요. 백업으로 **웹 ChatGPT + `prompts/bootcamp-agent-prompt.md`** 복붙 방식으로 전환할 수 있습니다.
+
+## 10. DOCX 내보내기가 안 돼요 (`scripts/export-docx.sh`)
+- "pandoc이 없습니다" 메시지: pandoc 설치 후 다시 실행.
+  - macOS: `brew install pandoc` / Windows: `choco install pandoc` (또는 https://pandoc.org/installing.html) / Linux: `sudo apt install pandoc`
+- ".md 산출물이 없습니다": 아직 `roadmap/`에 문서가 없는 경우입니다. 코치와 단계를 먼저 진행하세요.
+- 표가 깨져 보이면 pandoc 버전이 오래된 것일 수 있습니다(`pandoc --version`으로 확인, 2.x 이상 권장).

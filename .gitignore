@@ -3,3 +3,8 @@ node_modules/
 *.log
 .env
 .codex/
+
+# 참가자 산출물(개인 작업물)·내보낸 문서는 추적하지 않음
+roadmap/*.md
+roadmap/*.docx
+!roadmap/.gitkeep

@@ -35,6 +35,8 @@
 
 각 산출물은 `templates/participant-workbook.md`의 항목 구조를 기준으로 채운다.
 
+9단계까지 끝나면(또는 참가자가 "문서로 내보내줘"라고 하면) `roadmap/`의 모든 마크다운을 **하나의 DOCX로 내보낸다**: 터미널에서 `bash scripts/export-docx.sh` 실행을 제안하고 승인받아 실행한다(결과: `roadmap/나의_창업로드맵.docx`). pandoc이 없으면 스크립트가 설치 방법을 안내한다.
+
 ## 언어
 
 - 기본 출력은 한국어로 한다.

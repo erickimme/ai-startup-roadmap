@@ -2,9 +2,9 @@
 
 연세대학교 × One Degree Labs · 2일 창업 워크숍 **실습 키트**
 
-이 키트를 컴퓨터에 받고 **Codex CLI로 대화**하면, AI 코치가 단계별로 안내하며
-당신의 1문장 아이디어를 **9종 창업 문서**로 만들어 `roadmap/` 폴더에 차곡차곡 저장합니다.
-복잡한 명령 없이 **그냥 대화만** 하면 됩니다.
+Codex CLI를 설치하고 **아래 프롬프트 한 번만 붙여넣으면**, AI 코치가 이 저장소를 읽어
+당신의 1문장 아이디어를 **9종 창업 문서**로 만들어 `roadmap/` 폴더에 저장합니다.
+복잡한 설치(클론) 없이, **그냥 대화만** 하면 됩니다.
 
 > 이 스킬팩은 [retention-corp/road-to-founders](https://github.com/retention-corp/road-to-founders)(MIT, Retention Corp)를 기반으로 Codex CLI 배포용으로 구성했습니다. 출처/라이선스는 `LICENSE`·`NOTICE.md` 참고.
 
@@ -17,28 +17,44 @@
    ```bash
    npm install -g @openai/codex
    ```
-   - macOS/Linux는 `bash setup.sh` 로 한 번에 설치해도 됩니다.
    - Windows는 **WSL** 사용을 권장합니다(강사 안내).
 
-## 2. 이 키트 받기
+## 2. Codex 실행
 
-```bash
-git clone https://github.com/erickimme/ai-startup-roadmap.git
-cd ai-startup-roadmap
-```
-
-## 3. 시작하기 (그냥 대화하세요)
+터미널에서 아래를 실행하고, 처음이면 **ChatGPT(Business/Plus) 계정으로 로그인**합니다.
 
 ```bash
 codex
 ```
 
-- 처음 실행하면 **ChatGPT(Business/Plus) 계정으로 로그인**합니다.
-- 로그인 후, 코치에게 이렇게 말하세요:
+## 3. 프롬프트 붙여넣기
 
-> 안녕! 내 창업 아이디어는 **[여기에 한두 문장]** 이야. 워크숍 시작하자.
+아래 프롬프트를 복사해 Codex에 붙여넣고, **`[내 아이디어]`** 부분만 본인 것으로 바꿔 보내세요.
 
-Codex가 폴더의 `AGENTS.md`를 자동으로 읽어 **코치**가 되고, `skills/`를 라우팅하며 1단계부터 순서대로 안내합니다. 결과물은 `roadmap/` 폴더에 `.md`로 쌓입니다.
+```text
+https://github.com/erickimme/ai-startup-roadmap 저장소를 clone해서 읽고,
+그 안의 AGENTS.md와 skills/ 를 따라 "Road to Founders" 창업 로드맵 코치로 진행해줘.
+
+내 창업 아이디어: [여기에 한두 문장으로 입력]
+
+규칙:
+- Stage 1(아이디어 정의서)부터 한 단계씩 진행하고, 단계마다 질문은 최대 5개만.
+- 각 단계 산출물은 roadmap/ 폴더에 한국어 마크다운 파일로 저장해줘.
+- 모르는 숫자는 [가정]으로 표시하고, 매 단계 '가장 약한 가정'을 짚어줘.
+- 한국어로, 칭찬보다 구체적인 수정에 집중해줘.
+먼저 환영 인사와 함께 Stage 1을 시작해줘.
+```
+
+> 💡 Codex가 저장소를 가져오려고 `git clone` 실행 승인을 물으면 **승인(y)** 하세요. 이후부터는 코치가 1단계부터 순서대로 안내하고, 결과물이 `roadmap/` 폴더에 쌓입니다.
+
+짧게 쓰고 싶으면 이렇게만 보내도 됩니다:
+
+```text
+https://github.com/erickimme/ai-startup-roadmap 를 활용해서 내 창업 로드맵을 만들어보고 싶어.
+내 아이디어는 [여기에 한두 문장]. AGENTS.md를 읽고 Stage 1부터 진행해줘.
+```
+
+## 4. 대화 팁
 
 | 이렇게 말하면 | 이렇게 동작 |
 |---|---|
@@ -51,8 +67,8 @@ Codex가 폴더의 `AGENTS.md`를 자동으로 읽어 **코치**가 되고, `ski
 
 ## 다른 AI 환경에서 쓰기
 
-- **Claude Code / Cursor / OpenClaw / GBrain** — repo를 열고 “AGENTS.md를 읽고 Road to Founders 스킬팩으로 진행해줘”라고 요청. `skills/manifest.json`으로 라우팅됩니다.
-- **ChatGPT Plus(웹, repo를 못 읽는 경우)** — `prompts/bootcamp-agent-prompt.md`를 첫 메시지로 붙여넣고, 각 단계에서 필요한 `skills/<name>/SKILL.md`를 복사해 사용. 산출물은 `templates/participant-workbook.md` 양식으로 정리.
+- **Claude Code / Cursor / OpenClaw / GBrain** — 위 프롬프트의 저장소 URL을 그대로 알려주고 “AGENTS.md를 읽고 Road to Founders 스킬팩으로 진행해줘”라고 요청. `skills/manifest.json`으로 라우팅됩니다.
+- **ChatGPT Plus(웹, 저장소를 못 읽는 경우)** — `prompts/bootcamp-agent-prompt.md`를 첫 메시지로 붙여넣고, 각 단계에서 필요한 `skills/<name>/SKILL.md`를 복사해 사용. 산출물은 `templates/participant-workbook.md` 양식으로 정리.
 
 ## 구성
 
@@ -69,8 +85,8 @@ Codex가 폴더의 `AGENTS.md`를 자동으로 읽어 **코치**가 되고, `ski
 
 ## 결과물 (9종)
 
-1. 아이디어 정의서 · 2. 비즈니스 모델 캔버스 · 3. GTM 전략서 · 4. 세일즈 플랜 · 5. 미니 피칭
-6. 개발 로드맵 · 7. HR 플랜 · 8. 실행 타임라인 · 9. 피어 리뷰 → **최종 수정본 + 최종 피치**
+1. 아이디어 정의서 · 2. 비즈니스 모델 캔버스 · 3. GTM 전략서 · 4. 세일즈 플랜 · 5. 개발 로드맵
+6. HR 플랜 · 7. 실행 타임라인 · 8. 피어 리뷰 · 9. 최종 수정본 → 마지막에 **미니 피칭 / 최종 피치**
 
 빠른 참가자는 `korean-synthetic-consumer`(합성 소비자 패널)와 `vc-red-team-review`(투자자 레드팀)까지 진행합니다.
 

@@ -42,6 +42,7 @@ https://github.com/erickimme/ai-startup-roadmap 저장소를 clone해서 읽고,
 - 각 단계 산출물은 roadmap/ 폴더에 한국어 마크다운 파일로 저장해줘.
 - 모르는 숫자는 [가정]으로 표시하고, 매 단계 '가장 약한 가정'을 짚어줘.
 - 한국어로, 칭찬보다 구체적인 수정에 집중해줘.
+- full 모드로 2일에 걸쳐 깊게 진행해줘 — 단계마다 필요하면 korean-synthetic-consumer(합성 소비자)와 evidence-research(근거 리서치)도 활용해 구체적으로.
 먼저 환영 인사와 함께 Stage 1을 시작해줘.
 ```
 

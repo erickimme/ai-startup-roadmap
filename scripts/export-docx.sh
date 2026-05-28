@@ -1,14 +1,23 @@
 #!/usr/bin/env bash
 # roadmap/*.md → DOCX 내보내기 (단계별 + 통합), 가독성 템플릿(assets/reference.docx) 적용
-# 사용법:  bash scripts/export-docx.sh [소스폴더]
-#   예)   bash scripts/export-docx.sh
+# 사용법:  bash scripts/export-docx.sh [소스폴더] [이름]
+#   예)   bash scripts/export-docx.sh                       # → roadmap/나의_창업로드맵.docx
+#         bash scripts/export-docx.sh roadmap "홍길동"      # → roadmap/홍길동_창업로드맵.docx
 #         bash scripts/export-docx.sh examples/sample-run-건강정보플랫폼
 set -euo pipefail
 
 SRC="${1:-roadmap}"
+NAME="${2:-}"
 OUTDIR="$SRC/docx"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 REF="$ROOT/assets/reference.docx"
+
+# 통합 문서 파일명/제목: 이름이 있으면 "[이름]_창업로드맵.docx"
+if [ -n "$NAME" ]; then
+  COMBINED="$SRC/${NAME}_창업로드맵.docx"; TITLE="${NAME}의 창업 로드맵"
+else
+  COMBINED="$SRC/나의_창업로드맵.docx";    TITLE="나의 창업 로드맵"
+fi
 
 [ -d "$SRC" ] || { echo "✗ 소스 폴더가 없습니다: $SRC"; exit 1; }
 if ! command -v pandoc >/dev/null 2>&1; then
@@ -33,17 +42,17 @@ for f in "$SRC"/*.md; do
 done
 [ "$count" -gt 0 ] || { echo "✗ $SRC 에 .md 산출물이 없습니다."; exit 1; }
 
-# 2) 통합 DOCX → README(목차) + 01~09 병합
+# 2) 통합 DOCX → README(목차) + 01~09 + 부록 병합
 files=()
 [ -f "$SRC/README.md" ] && files+=("$SRC/README.md")
 while IFS= read -r f; do files+=("$f"); done < <(ls "$SRC"/*.md 2>/dev/null | grep -v '/README.md$' | sort)
 if [ -f "$REF" ]; then
-  pandoc -f gfm --toc --reference-doc "$REF" --metadata title="나의 창업 로드맵" -o "$SRC/나의_창업로드맵.docx" "${files[@]}"
+  pandoc -f gfm --toc --reference-doc "$REF" --metadata title="$TITLE" -o "$COMBINED" "${files[@]}"
 else
-  pandoc -f gfm --toc --metadata title="나의 창업 로드맵" -o "$SRC/나의_창업로드맵.docx" "${files[@]}"
+  pandoc -f gfm --toc --metadata title="$TITLE" -o "$COMBINED" "${files[@]}"
 fi
 
 NOTE=""; [ -f "$REF" ] && NOTE=" (서식 템플릿 적용)"
 echo "✅ 단계별 DOCX ${count}개 → $OUTDIR/$NOTE  (Word에서 열어 수정·개선)"
-echo "✅ 통합 DOCX → $SRC/나의_창업로드맵.docx"
+echo "✅ 통합 DOCX → $COMBINED"
 echo "ℹ Word에서 고친 뒤에는  bash scripts/sync-docx.sh $SRC  로 다시 반영하세요."

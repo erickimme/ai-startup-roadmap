@@ -39,7 +39,7 @@
 
 각 단계 산출물이 쌓이면, 참가자가 **Word에서 직접 고칠 수 있도록 DOCX로 내보낸다**.
 
-- 한 단계를 끝낼 때(또는 참가자가 "문서로 내보내줘"라고 하면) `bash scripts/export-docx.sh` 실행을 제안·승인받아 실행한다 → `roadmap/docx/NN_*.docx`(단계별) + `roadmap/나의_창업로드맵.docx`(통합) 생성.
+- 한 단계를 끝낼 때(또는 참가자가 "문서로 내보내줘"라고 하면) `bash scripts/export-docx.sh roadmap "<참가자 이름>"` 실행을 제안·승인받아 실행한다 → `roadmap/docx/NN_*.docx`(단계별) + `roadmap/<이름>_창업로드맵.docx`(통합) 생성. **참가자 이름을 반드시 인자로 넘긴다**(프롬프트의 "내 이름" 사용). 이름을 모르면 생략하면 `나의_창업로드맵.docx`로 만들어진다.
 - 참가자가 docx를 Word에서 수정한 뒤 **"수정했어/반영해줘"**라고 하면: 바꾼 핵심을 말로 받아 md를 갱신하거나, `bash scripts/sync-docx.sh`로 docx→md 재반영 후 다음 단계로 이어간다.
 - pandoc이 없으면 스크립트가 설치 방법을 안내한다.
 

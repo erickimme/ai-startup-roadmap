@@ -52,3 +52,13 @@ codex --version   # 버전이 나오면 설치 OK
 - Codex는 **기본적으로 웹 검색이 켜져** 있습니다(cached). **최신 출처**가 필요하면 `codex --search`로 실행하거나 `~/.codex/config.toml`에 `web_search = "live"`를 추가하세요.
 - 시장 규모·가격·통계 같은 숫자는 코치에게 **"웹에서 확인해 출처 달아줘"**라고 하면 `evidence-research`가 출처 URL을 붙입니다(못 찾으면 `[가정]` 표시).
 - ⚠️ 웹 결과는 **신뢰할 수 없는 정보로 간주**하고(인젝션 주의), 공식·1차 자료를 우선하세요.
+
+## 12. Vercel / Supabase 로그인·배포가 안 돼요 (Day 2 빌드)
+- CLI가 없으면 설치: `npm i -g vercel`, `npm i -g supabase`.
+- 로그인은 **사람이 한 번만**: `vercel login`, `supabase login` (둘 다 GitHub 계정으로 무료 가입). 이후 배포·DB는 에이전트가 진행합니다.
+- 배포 후 화면이 비거나 폼이 안 되면 **환경변수**부터 확인: `vercel env`에 `NEXT_PUBLIC_SUPABASE_URL`·`NEXT_PUBLIC_SUPABASE_ANON_KEY`가 있는지 보고, 추가 후 `vercel --prod`로 재배포.
+
+## 13. waitlist 신청이 저장이 안 돼요 (Supabase RLS)
+- waitlist 테이블에 **익명 INSERT 정책**이 없으면 등록이 막힙니다. `templates/landing/supabase/migrations/0001_waitlist.sql`을 적용했는지 확인(`supabase db push`).
+- 클라이언트에는 **anon key만** 쓰세요(공개돼도 안전, RLS가 보호). `service_role` 키는 절대 코드/배포에 넣지 않습니다.
+- "이미 신청됨"은 정상입니다(중복 이메일은 무시). 저장 여부는 Supabase 대시보드 Table editor에서 확인하세요.

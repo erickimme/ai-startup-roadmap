@@ -18,6 +18,7 @@
     {"name": "vc-red-team-review", "path": "vc-red-team-review/SKILL.md", "description": "투자자 관점의 약한 가정 공격과 피어 리뷰"},
     {"name": "pitch-coach", "path": "pitch-coach/SKILL.md", "description": "30초, 60초, 3분 피치와 Q&A 준비"},
     {"name": "final-editor", "path": "final-editor/SKILL.md", "description": "9개 산출물의 최종 수정본 정리"},
+    {"name": "vibe-build", "path": "vibe-build/SKILL.md", "description": "어제 로드맵을 동작하는 랜딩(waitlist)·MVP로 빌드·배포·데모 (Day 2 캡스톤, Vercel+Supabase)"},
     {"name": "skill-creator-lite", "path": "skill-creator-lite/SKILL.md", "description": "캠프 중 빈 기능을 새 스킬로 만드는 경량 메타 스킬"}
   ]
 }

@@ -28,6 +28,8 @@ mutating: false
 8. `vc-red-team-review`: 피어 리뷰와 약한 가정 공격
 9. `final-editor` + `pitch-coach`: 최종본과 피치
 
+**(Day 2 캡스톤) 10. `vibe-build`**: 어제 로드맵을 동작하는 랜딩(waitlist)·MVP로 만들어 배포·데모한다. GitHub+Vercel+Supabase, 사람은 로그인(auth)만 한다.
+
 고객 반응이 필요한 순간에는 `korean-synthetic-consumer`를 보조로 사용한다. 시장 규모, 경쟁사, 가격, 인건비 근거가 필요한 순간에는 `evidence-research`를 사용한다.
 
 > **출처 부착(full 모드 기본).** 2단계 BMC의 TAM/SAM/SOM과 4단계 세일즈의 경쟁 가격·CAC를 만들 때는 **먼저 `evidence-research`로 웹 검색해 출처(URL)를 단다.** 시장 숫자를 검색 없이 바로 `[가정]`으로 적고 넘어가지 않는다. 각 산출물 하단에 **출처(References)** 섹션을 두고, 못 찾은 숫자만 `[가정]`으로 둔다. (fast 모드는 검색을 생략할 수 있으나, 그때도 숫자는 `[가정]`으로 명시한다.)
@@ -92,6 +94,7 @@ Codex/Claude Code/Cursor처럼 파일을 쓸 수 있는 환경에서는, 각 단
 | 7 실행 타임라인 | `roadmap/07_실행타임라인.md` |
 | 8 피어 리뷰 | `roadmap/08_피어리뷰.md` |
 | 9 최종본 + 최종 피치 | 전체 갱신 + `roadmap/09_최종피칭.md` + `roadmap/README.md`(목차) |
+| 10 빌드 (Day 2) | `roadmap/10_빌드.md`(트랙·배포 URL·검증 가설) |
 
 각 단계를 끝낼 때 **DOCX로 내보내** 참가자가 Word에서 수정하게 한다: `bash scripts/export-docx.sh roadmap "<참가자 이름>"` → `roadmap/docx/NN_*.docx`(단계별) + `roadmap/<이름>_창업로드맵.docx`(통합). 참가자가 Word에서 고치면 그 내용을 말로 받아 md를 갱신하거나 `bash scripts/sync-docx.sh`로 재반영한 뒤 다음 단계로 진행한다. (md는 작업 원본, docx는 사람이 보고 고치는 사본)
 

@@ -12,4 +12,4 @@ roadmap/*.docx
 docx/
 
 # 참가자 reference 원본(비공개)
-examples/**/eric-startup-roadmap-v0-detailed*.docx
+examples/**/eric-startup-roadmap-v0-detailed*

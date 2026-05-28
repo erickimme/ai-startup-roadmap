@@ -13,3 +13,7 @@ docx/
 
 # 참가자 reference 원본(비공개)
 examples/**/eric-startup-roadmap-v0-detailed*
+
+# 수강생 실제 산출물(개인 사업계획 — 공개 금지)
+day1_students_output/
+*_students_output/

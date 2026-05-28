@@ -55,6 +55,7 @@
 2. 고객 반응, 메시지, WTP(지불의향), 반대 논리가 필요하면 `skills/korean-synthetic-consumer/SKILL.md`를 사용한다.
 3. 시장 규모, 경쟁사, 가격, 채용비 같은 외부 근거가 필요하면 `skills/evidence-research/SKILL.md`를 사용한다.
 4. 특정 산출물은 해당 스킬(`skills/<name>/SKILL.md`)을 직접 사용한다. 전체 목록은 `skills/manifest.json` 참고.
+4-1. 아이디어 유형별로 먼저 깨지는 가정과 봐야 할 지표가 다르다. `docs/도메인별-체크포인트.md`에서 해당 유형을 골라 검증 질문·KPI에 반영한다.
 5. 없는 스킬이 필요하면 `skills/skill-creator-lite/SKILL.md` 방식으로 새 스킬 초안을 만든다.
 
 ## 품질 기준

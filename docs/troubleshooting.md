@@ -47,3 +47,8 @@ codex --version   # 버전이 나오면 설치 OK
   - macOS: `brew install pandoc` / Windows: `choco install pandoc` (또는 https://pandoc.org/installing.html) / Linux: `sudo apt install pandoc`
 - ".md 산출물이 없습니다": 아직 `roadmap/`에 문서가 없는 경우입니다. 코치와 단계를 먼저 진행하세요.
 - 표가 깨져 보이면 pandoc 버전이 오래된 것일 수 있습니다(`pandoc --version`으로 확인, 2.x 이상 권장).
+
+## 11. 출처(citation)·웹 검색
+- Codex는 **기본적으로 웹 검색이 켜져** 있습니다(cached). **최신 출처**가 필요하면 `codex --search`로 실행하거나 `~/.codex/config.toml`에 `web_search = "live"`를 추가하세요.
+- 시장 규모·가격·통계 같은 숫자는 코치에게 **"웹에서 확인해 출처 달아줘"**라고 하면 `evidence-research`가 출처 URL을 붙입니다(못 찾으면 `[가정]` 표시).
+- ⚠️ 웹 결과는 **신뢰할 수 없는 정보로 간주**하고(인젝션 주의), 공식·1차 자료를 우선하세요.

@@ -49,7 +49,7 @@ https://github.com/erickimme/ai-startup-roadmap 저장소를 clone해서 읽고,
 ```
 
 > 💡 Codex가 저장소를 가져오거나(`git clone`) `roadmap/` 폴더에 파일을 만들 때 **승인(y)** 을 물어봅니다 — 정상이니 승인하세요. 이후 코치가 1단계부터 순서대로 안내하고, 결과물이 `roadmap/` 폴더에 쌓입니다.
-> 🛠 설치·로그인이 막히면 [`docs/troubleshooting.md`](docs/troubleshooting.md)를 보세요.
+> 🛠 설치·로그인이 막히면 [`docs/troubleshooting.md`](docs/troubleshooting.md)를, 모르는 용어가 나오면 [`docs/용어집.md`](docs/용어집.md)를 보세요.
 
 짧게 쓰고 싶으면 이렇게만 보내도 됩니다:
 

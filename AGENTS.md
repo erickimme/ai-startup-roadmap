@@ -56,7 +56,8 @@
 3. 시장 규모, 경쟁사, 가격, 채용비 같은 외부 근거가 필요하면 `skills/evidence-research/SKILL.md`를 사용한다.
 4. 특정 산출물은 해당 스킬(`skills/<name>/SKILL.md`)을 직접 사용한다. 전체 목록은 `skills/manifest.json` 참고.
 4-1. 아이디어 유형별로 먼저 깨지는 가정과 봐야 할 지표가 다르다. `docs/도메인별-체크포인트.md`에서 해당 유형을 골라 검증 질문·KPI에 반영한다.
-4-2. (Day 2 캡스톤) 어제 로드맵을 실제 랜딩(waitlist)·MVP로 만들 때는 `skills/vibe-build/SKILL.md`를 쓴다. GitHub+Vercel+Supabase, 사람은 로그인(auth)만 하고 나머지는 에이전트가 CLI로 진행한다.
+4-2. (Day 2 Stage 10) 어제 로드맵을 실제 랜딩(waitlist)·MVP로 만들 때는 `skills/vibe-build/SKILL.md`를 쓴다. GitHub+Vercel+Supabase, 사람은 로그인(auth)만 하고 나머지는 에이전트가 CLI로 진행한다.
+4-3. (Day 2 Stage 11) 배포가 끝난 뒤 디자인을 올릴 때는 `skills/design-polish/SKILL.md`(+`docs/디자인-가이드.md`)를 쓴다. 레퍼런스 기반·shadcn/ui로 "AI 티" 없이. 빌드와 디자인은 단계를 분리한다.
 5. 없는 스킬이 필요하면 `skills/skill-creator-lite/SKILL.md` 방식으로 새 스킬 초안을 만든다.
 
 ## 품질 기준

@@ -28,7 +28,9 @@ mutating: false
 8. `vc-red-team-review`: 피어 리뷰와 약한 가정 공격
 9. `final-editor` + `pitch-coach`: 최종본과 피치
 
-**(Day 2 캡스톤) 10. `vibe-build`**: 어제 로드맵을 동작하는 랜딩(waitlist)·MVP로 만들어 배포·데모한다. GitHub+Vercel+Supabase, 사람은 로그인(auth)만 한다.
+**(Day 2 Stage 10) `vibe-build`**: 어제 로드맵을 동작하는 랜딩(waitlist)·MVP로 만들어 **빠르게 배포**한다(못생겨도 OK). GitHub+Vercel+Supabase, 사람은 로그인(auth)만.
+
+**(Day 2 Stage 11) `design-polish`**: 배포된 페이지를 레퍼런스 기반으로 다시 디자인해 "AI 티" 없이 끌어올린다(shadcn/ui). 빌드와 디자인은 단계를 분리해, 참가자가 "하나씩 완성되는" 성취를 두 번 맛보게 한다.
 
 고객 반응이 필요한 순간에는 `korean-synthetic-consumer`를 보조로 사용한다. 시장 규모, 경쟁사, 가격, 인건비 근거가 필요한 순간에는 `evidence-research`를 사용한다.
 

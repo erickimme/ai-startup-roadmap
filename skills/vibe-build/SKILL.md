@@ -88,5 +88,8 @@ supabase login       # 필요시: npm i -g supabase
 - `service_role` 등 비밀키를 클라이언트에 노출하지 않는다. 폼 insert는 anon key + RLS로 한다.
 - RLS 테이블(익명 INSERT only)에는 **`upsert` 대신 `insert` + 중복(코드 23505) 처리**를 쓴다. upsert는 ON CONFLICT 평가에 SELECT 정책이 필요해 익명 INSERT-only RLS와 충돌한다(실측: 42501 권한오류).
 - 데모 URL이 로그인을 요구하면(Vercel **Team** 계정의 Deployment Protection) 프로젝트 Settings → Deployment Protection을 끈다. 개인 **Hobby** 계정은 기본 공개.
+
+## 다음 단계
+배포가 끝나면(못생겨도 OK · 핵심 작동·waitlist 확인) **`design-polish`** 스킬로 디자인을 올린다. 빌드와 디자인은 단계를 분리한다. → `docs/디자인-가이드.md`
 - 범위를 1개로 좁힌다. 안 되면 진짜 1개 + 나머지 가짜.
 - 사람은 auth만, 나머지는 에이전트가 CLI로.

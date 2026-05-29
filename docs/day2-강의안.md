@@ -35,6 +35,8 @@
 
 ## Part 2. 바이브코딩 빌드 (14:00~16:00) — `vibe-build` 스킬
 
+> **2단계로 분리:** ① `vibe-build`로 **빠르게 배포**(못생겨도 OK, 핵심·waitlist 작동 확인) → ② `design-polish`로 **레퍼런스 기반 디자인**(shadcn/ui, "AI 티" 제거 · `docs/디자인-가이드.md`). 참가자는 "배포됐다!" → "예뻐졌다!" 성취를 두 번 맛본다.
+
 ### 도구/스택 (AI-native)
 **GitHub + Vercel + Supabase**, Next.js. 참가자는 **로그인(auth)만**, 나머지(레포·스캐폴딩·DB·배포)는 Codex가 CLI로.
 ```bash

@@ -86,5 +86,7 @@ supabase login       # 필요시: npm i -g supabase
 - **Landing은 waitlist를 무조건 받는다.** 신청 폼 없는 랜딩은 의미가 없다.
 - Supabase 테이블에는 **항상 RLS**를 건다(익명 INSERT만 허용, SELECT 차단).
 - `service_role` 등 비밀키를 클라이언트에 노출하지 않는다. 폼 insert는 anon key + RLS로 한다.
+- RLS 테이블(익명 INSERT only)에는 **`upsert` 대신 `insert` + 중복(코드 23505) 처리**를 쓴다. upsert는 ON CONFLICT 평가에 SELECT 정책이 필요해 익명 INSERT-only RLS와 충돌한다(실측: 42501 권한오류).
+- 데모 URL이 로그인을 요구하면(Vercel **Team** 계정의 Deployment Protection) 프로젝트 Settings → Deployment Protection을 끈다. 개인 **Hobby** 계정은 기본 공개.
 - 범위를 1개로 좁힌다. 안 되면 진짜 1개 + 나머지 가짜.
 - 사람은 auth만, 나머지는 에이전트가 CLI로.

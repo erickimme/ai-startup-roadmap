@@ -43,3 +43,4 @@ vercel --prod                          # 공개 URL = 데모
 ## 주의
 - **waitlist 폼은 빼지 않는다.** 수요 신호를 받는 것이 이 페이지의 목적이다.
 - `NEXT_PUBLIC_*` 키만 클라이언트에 노출한다. `service_role` 키는 절대 코드/클라이언트에 넣지 않는다.
+- RLS(익명 INSERT only) 때문에 waitlist는 **upsert 대신 `insert` + 중복(23505) 처리**를 쓴다(`app/actions.ts` 참고). upsert는 SELECT 정책을 요구해 충돌한다.

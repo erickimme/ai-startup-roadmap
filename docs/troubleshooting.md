@@ -62,3 +62,8 @@ codex --version   # 버전이 나오면 설치 OK
 - waitlist 테이블에 **익명 INSERT 정책**이 없으면 등록이 막힙니다. `templates/landing/supabase/migrations/0001_waitlist.sql`을 적용했는지 확인(`supabase db push`).
 - 클라이언트에는 **anon key만** 쓰세요(공개돼도 안전, RLS가 보호). `service_role` 키는 절대 코드/배포에 넣지 않습니다.
 - "이미 신청됨"은 정상입니다(중복 이메일은 무시). 저장 여부는 Supabase 대시보드 Table editor에서 확인하세요.
+- ⚠️ RLS 테이블에 **upsert를 쓰면 권한 오류(42501)**가 납니다(ON CONFLICT가 SELECT 정책을 요구). waitlist는 **`insert` + 중복(23505) 처리**로 합니다(템플릿 `app/actions.ts` 기본 적용).
+
+## 14. 배포한 사이트가 열리지 않고 로그인을 요구해요 (Vercel 배포 보호)
+- Vercel **Team/Pro** 프로젝트는 "Deployment Protection(Vercel Authentication)"이 켜져 있어 배포 URL이 로그인을 요구할 수 있습니다(HTTP 401). 데모를 공개하려면 Vercel 프로젝트 → Settings → **Deployment Protection**을 끄세요.
+- 개인 **Hobby** 계정은 기본적으로 꺼져 있어 배포 URL이 바로 공개됩니다(대부분의 참가자 해당).

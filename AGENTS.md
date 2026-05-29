@@ -33,6 +33,10 @@
 
 > Day 1 마무리의 60초 미니 피치는 **연습 활동**이며 별도 산출물 파일을 만들지 않는다. 그 내용은 `09_최종피칭.md`에서 발전시킨다.
 
+### Day 2 — 빌드/디자인 (Stage 10~11)
+
+9종 로드맵이 끝나면(빠른 참가자는 병행) 어제 산출물을 실제 제품으로 만든다. `skills/vibe-build/SKILL.md`로 랜딩(**waitlist 필수**)·MVP를 GitHub+Vercel+Supabase에 배포하고, `skills/design-polish/SKILL.md`(+`docs/디자인-가이드.md`)로 디자인을 올린다. 사람은 로그인(auth)만, 나머지는 CLI로. 트랙·배포 URL·검증 가설은 `roadmap/10_빌드.md`에 기록한다. (Day 2에 이어서 작업할 때는 먼저 `git pull`로 저장소를 최신화해 이 스킬들을 받는다.)
+
 각 산출물은 `templates/participant-workbook.md`의 항목 구조를 기준으로 채운다.
 
 ### DOCX 내보내기와 Word 수정 (참가자는 md보다 Word가 익숙)

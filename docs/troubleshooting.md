@@ -67,3 +67,8 @@ codex --version   # 버전이 나오면 설치 OK
 ## 14. 배포한 사이트가 열리지 않고 로그인을 요구해요 (Vercel 배포 보호)
 - Vercel **Team/Pro** 프로젝트는 "Deployment Protection(Vercel Authentication)"이 켜져 있어 배포 URL이 로그인을 요구할 수 있습니다(HTTP 401). 데모를 공개하려면 Vercel 프로젝트 → Settings → **Deployment Protection**을 끄세요.
 - 개인 **Hobby** 계정은 기본적으로 꺼져 있어 배포 URL이 바로 공개됩니다(대부분의 참가자 해당).
+
+## 15. (Day 2) 어제 폴더로 이어서 / 최신 스킬이 안 보여요
+- 어제 작업은 **clone한 `ai-startup-roadmap` 폴더**에 있습니다(산출물은 `roadmap/`). 그 폴더를 다시 열어 `codex`를 실행하세요.
+- **배포·디자인 스킬(`vibe-build`·`design-polish`)이 안 보이면** 어제 이후 추가된 것이라, 폴더에서 `git pull`로 최신화하세요(코치에게 "git pull로 최신화해줘"라고 요청). `roadmap/`은 gitignore라 어제 산출물은 보존됩니다.
+- 폴더를 못 찾으면 강사 호출 🙋 새로 clone하면 어제 산출물이 없으니, 가능하면 **어제 폴더**를 쓰세요.

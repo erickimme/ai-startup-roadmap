@@ -31,3 +31,5 @@
 
 먼저 Stage 1. 아이디어 정의서부터 시작해줘.
 ```
+
+> **Day 2 (배포·디자인):** Codex CLI 등 파일·실행이 되는 환경이면, 9단계 후 `vibe-build`로 랜딩(waitlist)·MVP를 배포하고 `design-polish`로 디자인을 올립니다. (ChatGPT 웹은 코드 산출물 위주 — 실제 배포는 Codex CLI에서)
